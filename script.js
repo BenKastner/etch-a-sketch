@@ -9,8 +9,12 @@ function createGrid(rows, cols) {
     };
 };
 
+function randomHSL() {
+    return 'hsla(' + (Math.random() * 360) + ', 100%, 50%, 1';
+}
+
 container.addEventListener("mouseover", function( event ) {
-    event.target.style.backgroundColor = "orange";
+    event.target.style.backgroundColor = randomHSL();
 });
 
 createGrid(20, 20);
