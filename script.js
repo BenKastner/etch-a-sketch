@@ -8,3 +8,5 @@ function createGrid(rows, cols) {
         container.appendChild(cell).className = "grid-item";
     };
 };
+
+createGrid(8, 8);
