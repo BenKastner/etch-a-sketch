@@ -38,6 +38,4 @@ function randomHsl() {
     return 'hsla(' + (Math.random() * 360) + ', 100%, 50%, 1)';
 }
 
-const gridItem = document.querySelectorAll(".grid-item");
-
 clearButton.addEventListener("click", clearGrid);
