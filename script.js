@@ -15,13 +15,6 @@ function createGrid(num) {
     });
 };
 
-/* function removeGrid(num) {
-    for (c = 0; c < (num * num); c++) {
-        let square = document.querySelector(".grid-item");
-        container.removeChild(square);
-    };
-} */
-
 createGrid(num);
 
 function clearGrid () {
@@ -46,13 +39,5 @@ function randomHsl() {
 }
 
 const gridItem = document.querySelectorAll(".grid-item");
-
-/* gridItem.forEach((div) => {
-
-    div.addEventListener("mouseenter", (e) => {
-        e.target.style.backgroundColor = randomHsl();
-    });
-
-}); */
 
 clearButton.addEventListener("click", clearGrid);
