@@ -30,7 +30,15 @@ function clearGrid () {
         container.removeChild(square);
     }
     num = prompt("How many squares on each side of new grid?");
-    createGrid(num);
+    num = Number(num);
+
+    if (Number.isInteger(num) && (num > 0) && num < 100) {
+        createGrid(num);
+    } else {
+        alert("Please enter an integer between 0 and 100");
+        num = 1;
+        createGrid(num);
+    }
 }
 
 function randomHsl() {
